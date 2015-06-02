@@ -10,8 +10,6 @@ var expect = chai.expect;
 describe("max", function(){
     it("should compare two numbers and return largest number", function(){
         expect(max(1, 2)).to.equal(2)
-    it('should not accept non-string input', function() {
-        expect(function() {max([1,2])}).to.throw("You can only pass numbers into this function.");
 })
 function max(){
     "use strict";
@@ -21,21 +19,6 @@ function max(){
 // ---------------------
 // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
 // ---------------------
-var expect = chai.expect;
-
-
-
-describe("maxOfThree", function() {
-
-    it("should compare three numbers and return the largest number", function() {
-        expect(maxOfThree(1, 2, 3)).to.equal(3);
-    }
-    it('should not accept non-string input', function() {
-        expect(function() {maxOfThree([1,2,3])}).to.throw("You can only pass numbers into this function.");
-    it('should exist', function() {
-        expect(rovarsprocket).to.not.be.undefined;
-    });   
-}
 
 function maxOfThree(){
     "use strict";
@@ -45,14 +28,6 @@ function maxOfThree(){
 // ---------------------
 // Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 // ---------------------
-var expect = chai.expect;
-
-describe("isVowel", function() {
-    it("should look over a given string for vowels")
-}
-
-it('should not accept non-string input', function() {
-        expect(function() {isVowel([1,2,3])}).to.throw('You can only pass a string into this function.');
 
 function isVowel(char){
     "use strict";
@@ -62,44 +37,10 @@ function isVowel(char){
 // ---------------------
 // Write a function translate() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 // ---------------------
-var expect = chai.expect ;
 
-describe("rovarspraket", function() {
-     it('should exist', function() {
-        expect(rovarsprocket).to.not.be.undefined;
-    });
-    it('should not accept non-string input', function() {
-        expect(function() {rovarsprocket([1,2,3])}).to.throw('You can only pass a string into this function.');
-    });
-    it('should accept string input', function() {
-        expect(function() {rovarsprocket('test')}).to.not.throw('You can only pass a string into this function.');
-    });
-    it("should this with tothohisos", function() {
-        expect(rovarspraket("this")).to.equal(tothohisos)
-    }
-    it("should not accept strings with non-alphabetic characters", fucntion() {
-        expect(rovarspraket("this")).to.throw("You can only pass alphabetic string.")
-    }
-     it("should not accept strings with non-alphabetic characters", fucntion() {
-        expect(rovarspraket("sleepy")).to.throw("You can only pass alphabetic string.")
-    }
-});
-
-function rovarspraket(string){
-   if(typeof string !== "string")
-    throw("You can only pass a string into this function.";)
-}
-
-var vowels ="aeiouAEIOU";
-var resultString = " ";
-
-for(var i=0; i<string.length; i++) {
-    var currentCharacter = string.charAt(i);
-    if(!validator.isALpha(currentCharacter)) {
-        throw "You can only passs alphabetic string into this function.";
-    }
-    if (vowels.indexOf())
-    }
+function rovarspraket(phrase){
+    "use strict";
+    //...
 }
 
 // ---------------------

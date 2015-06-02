@@ -77,18 +77,18 @@ test();
 // }
 // fancy();
 
-var run = false;
+// var run = false;
 
-function fancy(arg1, arg2) {
-    if(run) {
-        console.log('I can run');
-    }
-    else {
-        console.log('I can\'t run');
-    }
+// function fancy(arg1, arg2) {
+//     if(run) {
+//         console.log('I can run');
+//     }
+//     else {
+//         console.log('I can\'t run');
+//     }
 
-    var run = function() {
-        console.log('Will I run?');
-    }
-}
-fancy();
+//     var run = function() {
+//         console.log('Will I run?');
+//     }
+// }
+// fancy();
